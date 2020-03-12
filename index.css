@@ -12,6 +12,10 @@ body {
   padding: 1rem;
 }
 
+img{
+  max-width: 200px;
+}
+
 #toy-header img {
   height: 6rem;
   width: auto;
