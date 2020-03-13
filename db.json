@@ -47,6 +47,24 @@
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
       "likes": -2
+    },
+    {
+      "name": "Minions",
+      "image": "https://frugalfun4boys.com/app/uploads/2015/02/better-minions-3-Edited.jpg",
+      "likes": 0,
+      "id": 9
+    },
+    {
+      "name": "Barbie",
+      "image": "https://cdn.britannica.com/81/73381-050-BB7B041C/Barbie-doll-box-accessories-1959.jpg",
+      "likes": 0,
+      "id": 10
+    },
+    {
+      "name": "Baby Yoda ",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/0/00/The_Child_aka_Baby_Yoda_%28Star_Wars%29.jpg/220px-The_Child_aka_Baby_Yoda_%28Star_Wars%29.jpg",
+      "likes": 0,
+      "id": 11
     }
   ]
 }
