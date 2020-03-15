@@ -1,8 +1,6 @@
 const url = 'http://localhost:3000/toys'
 let addToy = false;
-//allToys is an array of toy objects
 let toyArray;
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const addBtn = document.querySelector("#new-toy-btn");
@@ -49,8 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
-
 function fetchToys() {
   fetch(url)
     .then(response => response.json())
@@ -65,13 +61,21 @@ function createAToy(toyObject) {
 
   let newDiv = document.createElement('div');
   newDiv.setAttribute('class', 'card');
+  newDiv.id = `${toyObject.id}`;
 
   newDiv.innerHTML = `
     <h2>${toyObject.name}</h2>
     <img src=${toyObject.image} class="toy-avatar" />
     <p>${toyObject.likes} Likes </p>
     <button class="like-btn">Like &#9829</button>`
-
+  
+  let button = newDiv.querySelector('button');
+  button.addEventListener('click', (event) => {
+    let id = (event.target.parentNode.id);
+    updateLikes(id);
+    addLikes(event);
+  });
+    
   toyContainer.appendChild(newDiv);
 };
 
@@ -80,6 +84,33 @@ function renderAllToys() {
     createAToy(toyArray[toy]);
   };
 }; 
+
+function addLikes(event) {
+  let likes = event.target.previousElementSibling;
+  let num = likes.innerText.split(" ").shift();
+  let addOneLike = parseInt(num) + 1; 
+  likes.innerText = `${addOneLike} Likes`;   
+};
+
+function updateLikes(id) {
+
+  id = parseInt(id); 
+
+  let likes = event.target.previousElementSibling;
+  let num = likes.innerText.split(" ").shift();
+  let addOneLike = parseInt(num) + 1;
+  
+  fetch(url + '/'+ `${id}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"  
+    }, 
+    body: JSON.stringify({likes: `${addOneLike}` }) 
+  });
+};
+
+
 
 
 
