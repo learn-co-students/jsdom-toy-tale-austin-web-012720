@@ -4,13 +4,13 @@
       "id": 1,
       "name": "Woody",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 5
+      "likes": "10"
     },
     {
       "id": 2,
       "name": "Buzz Lightyear",
       "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 8
+      "likes": "11"
     },
     {
       "id": 3,
@@ -40,13 +40,31 @@
       "id": 7,
       "name": "Hamm",
       "image": "https://cdn140.picsart.com/244090226021212.png?r1024x1024",
-      "likes": 0
+      "likes": "1"
     },
     {
       "id": 8,
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
       "likes": -2
+    },
+    {
+      "name": "Minions",
+      "image": "https://frugalfun4boys.com/app/uploads/2015/02/better-minions-3-Edited.jpg",
+      "likes": 0,
+      "id": 9
+    },
+    {
+      "name": "Barbie",
+      "image": "https://cdn.britannica.com/81/73381-050-BB7B041C/Barbie-doll-box-accessories-1959.jpg",
+      "likes": 0,
+      "id": 10
+    },
+    {
+      "name": "Baby Yoda ",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/0/00/The_Child_aka_Baby_Yoda_%28Star_Wars%29.jpg/220px-The_Child_aka_Baby_Yoda_%28Star_Wars%29.jpg",
+      "likes": "1",
+      "id": 11
     }
   ]
 }
